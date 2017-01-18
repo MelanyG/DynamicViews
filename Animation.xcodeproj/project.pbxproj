@@ -12,6 +12,8 @@
 		391BE31D1E27A54E00BA4E81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391BE31B1E27A54E00BA4E81 /* Main.storyboard */; };
 		391BE31F1E27A54E00BA4E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391BE31E1E27A54E00BA4E81 /* Assets.xcassets */; };
 		391BE3221E27A54E00BA4E81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391BE3201E27A54E00BA4E81 /* LaunchScreen.storyboard */; };
+		391BE32A1E27A6CB00BA4E81 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BE3291E27A6CB00BA4E81 /* RoundedView.swift */; };
+		397264E41E2F67C400D35B4C /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397264E31E2F67C400D35B4C /* DesignableButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		391BE31E1E27A54E00BA4E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		391BE3211E27A54E00BA4E81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		391BE3231E27A54E00BA4E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		391BE3291E27A6CB00BA4E81 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		397264E01E2E235000D35B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "Base.lproj/UIView+Designable.swift"; sourceTree = "<group>"; };
+		397264E31E2F67C400D35B4C /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,9 @@
 				391BE3171E27A54E00BA4E81 /* AppDelegate.swift */,
 				391BE3191E27A54E00BA4E81 /* ViewController.swift */,
 				391BE31B1E27A54E00BA4E81 /* Main.storyboard */,
+				397264DF1E2E235000D35B4C /* UIView+Designable.swift */,
+				397264E31E2F67C400D35B4C /* DesignableButton.swift */,
+				391BE3291E27A6CB00BA4E81 /* RoundedView.swift */,
 				391BE31E1E27A54E00BA4E81 /* Assets.xcassets */,
 				391BE3201E27A54E00BA4E81 /* LaunchScreen.storyboard */,
 				391BE3231E27A54E00BA4E81 /* Info.plist */,
@@ -138,6 +146,8 @@
 			files = (
 				391BE31A1E27A54E00BA4E81 /* ViewController.swift in Sources */,
 				391BE3181E27A54E00BA4E81 /* AppDelegate.swift in Sources */,
+				391BE32A1E27A6CB00BA4E81 /* RoundedView.swift in Sources */,
+				397264E41E2F67C400D35B4C /* DesignableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +168,14 @@
 				391BE3211E27A54E00BA4E81 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		397264DF1E2E235000D35B4C /* UIView+Designable.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				397264E01E2E235000D35B4C /* Base */,
+			);
+			name = "UIView+Designable.swift";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -299,6 +317,7 @@
 				391BE3281E27A54E00BA4E81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
