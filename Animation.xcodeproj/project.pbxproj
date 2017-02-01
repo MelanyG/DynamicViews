@@ -14,6 +14,8 @@
 		391BE3221E27A54E00BA4E81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391BE3201E27A54E00BA4E81 /* LaunchScreen.storyboard */; };
 		391BE32A1E27A6CB00BA4E81 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BE3291E27A6CB00BA4E81 /* RoundedView.swift */; };
 		397264E41E2F67C400D35B4C /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397264E31E2F67C400D35B4C /* DesignableButton.swift */; };
+		39F5F0961E42170D00963547 /* UINavigationController+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F5F0951E42170D00963547 /* UINavigationController+Colors.swift */; };
+		39F5F0981E421A4900963547 /* VisualEffectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F5F0971E421A4900963547 /* VisualEffectVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		391BE3291E27A6CB00BA4E81 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		397264E01E2E235000D35B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "Base.lproj/UIView+Designable.swift"; sourceTree = "<group>"; };
 		397264E31E2F67C400D35B4C /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		39F5F0951E42170D00963547 /* UINavigationController+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Colors.swift"; sourceTree = "<group>"; };
+		39F5F0971E421A4900963547 /* VisualEffectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				391BE3171E27A54E00BA4E81 /* AppDelegate.swift */,
 				391BE3191E27A54E00BA4E81 /* ViewController.swift */,
 				391BE31B1E27A54E00BA4E81 /* Main.storyboard */,
+				39F5F0951E42170D00963547 /* UINavigationController+Colors.swift */,
+				39F5F0971E421A4900963547 /* VisualEffectVC.swift */,
 				397264DF1E2E235000D35B4C /* UIView+Designable.swift */,
 				397264E31E2F67C400D35B4C /* DesignableButton.swift */,
 				391BE3291E27A6CB00BA4E81 /* RoundedView.swift */,
@@ -148,6 +154,8 @@
 				391BE3181E27A54E00BA4E81 /* AppDelegate.swift in Sources */,
 				391BE32A1E27A6CB00BA4E81 /* RoundedView.swift in Sources */,
 				397264E41E2F67C400D35B4C /* DesignableButton.swift in Sources */,
+				39F5F0961E42170D00963547 /* UINavigationController+Colors.swift in Sources */,
+				39F5F0981E421A4900963547 /* VisualEffectVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
