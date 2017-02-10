@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VisualEffectVC: UIViewController {
+class VisualEffectVC: UIViewController, UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +22,13 @@ class VisualEffectVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.styleNavBar(color: UIColor.purple, setTitle: "SecondController")
         super.viewWillAppear(animated)
         print(self.navigationController?.parentPath ?? "error")
         self.navigationController?.parentPath = "Visual entered"
         print(self.navigationController?.parentPath ?? "error")
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        
     }
     override func viewWillDisappear(_ animated: Bool) {
         
