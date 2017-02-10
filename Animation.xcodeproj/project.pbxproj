@@ -17,6 +17,11 @@
 		3946C1DC1E4DE176004EA6F3 /* UINavigationController+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946C1D81E4DE176004EA6F3 /* UINavigationController+Colors.swift */; };
 		3946C1DD1E4DE176004EA6F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946C1DA1E4DE176004EA6F3 /* ViewController.swift */; };
 		3946C1DE1E4DE176004EA6F3 /* VisualEffectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946C1DB1E4DE176004EA6F3 /* VisualEffectVC.swift */; };
+		3946C1E01E4E06D3004EA6F3 /* MyCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946C1DF1E4E06D3004EA6F3 /* MyCollectionVC.swift */; };
+		3946C1E21E4E0973004EA6F3 /* MyLayOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946C1E11E4E0973004EA6F3 /* MyLayOut.swift */; };
+		3946C1E41E4E0ADB004EA6F3 /* MyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946C1E31E4E0ADB004EA6F3 /* MyCollectionCell.swift */; };
+		3946C1E61E4E162B004EA6F3 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946C1E51E4E162B004EA6F3 /* ItemModel.swift */; };
+		3946C1E81E4E1E7F004EA6F3 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3946C1E71E4E1E7F004EA6F3 /* Property List.plist */; };
 		397264E41E2F67C400D35B4C /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397264E31E2F67C400D35B4C /* DesignableButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +38,11 @@
 		3946C1D81E4DE176004EA6F3 /* UINavigationController+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Colors.swift"; sourceTree = "<group>"; };
 		3946C1DA1E4DE176004EA6F3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3946C1DB1E4DE176004EA6F3 /* VisualEffectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectVC.swift; sourceTree = "<group>"; };
+		3946C1DF1E4E06D3004EA6F3 /* MyCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionVC.swift; sourceTree = "<group>"; };
+		3946C1E11E4E0973004EA6F3 /* MyLayOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLayOut.swift; sourceTree = "<group>"; };
+		3946C1E31E4E0ADB004EA6F3 /* MyCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionCell.swift; sourceTree = "<group>"; };
+		3946C1E51E4E162B004EA6F3 /* ItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		3946C1E71E4E1E7F004EA6F3 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		397264E01E2E235000D35B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "Base.lproj/UIView+Designable.swift"; sourceTree = "<group>"; };
 		397264E31E2F67C400D35B4C /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,12 +77,16 @@
 		391BE3161E27A54E00BA4E81 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				3946C1E51E4E162B004EA6F3 /* ItemModel.swift */,
+				3946C1E71E4E1E7F004EA6F3 /* Property List.plist */,
 				3946C1D71E4DE176004EA6F3 /* Extensions */,
 				3946C1D91E4DE176004EA6F3 /* ViewControllers */,
 				391BE3171E27A54E00BA4E81 /* AppDelegate.swift */,
 				3946C1D31E4DCE1E004EA6F3 /* BlurNavBar.xib */,
 				3946C1D51E4DD852004EA6F3 /* BlurNavBar.swift */,
 				391BE31B1E27A54E00BA4E81 /* Main.storyboard */,
+				3946C1E31E4E0ADB004EA6F3 /* MyCollectionCell.swift */,
+				3946C1E11E4E0973004EA6F3 /* MyLayOut.swift */,
 				397264DF1E2E235000D35B4C /* UIView+Designable.swift */,
 				397264E31E2F67C400D35B4C /* DesignableButton.swift */,
 				391BE3291E27A6CB00BA4E81 /* RoundedView.swift */,
@@ -94,6 +108,7 @@
 		3946C1D91E4DE176004EA6F3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3946C1DF1E4E06D3004EA6F3 /* MyCollectionVC.swift */,
 				3946C1DA1E4DE176004EA6F3 /* ViewController.swift */,
 				3946C1DB1E4DE176004EA6F3 /* VisualEffectVC.swift */,
 			);
@@ -162,6 +177,7 @@
 				391BE3221E27A54E00BA4E81 /* LaunchScreen.storyboard in Resources */,
 				391BE31F1E27A54E00BA4E81 /* Assets.xcassets in Resources */,
 				3946C1D41E4DCE1E004EA6F3 /* BlurNavBar.xib in Resources */,
+				3946C1E81E4E1E7F004EA6F3 /* Property List.plist in Resources */,
 				391BE31D1E27A54E00BA4E81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,11 +191,15 @@
 			files = (
 				3946C1DD1E4DE176004EA6F3 /* ViewController.swift in Sources */,
 				391BE3181E27A54E00BA4E81 /* AppDelegate.swift in Sources */,
+				3946C1E01E4E06D3004EA6F3 /* MyCollectionVC.swift in Sources */,
 				3946C1D61E4DD852004EA6F3 /* BlurNavBar.swift in Sources */,
+				3946C1E61E4E162B004EA6F3 /* ItemModel.swift in Sources */,
 				391BE32A1E27A6CB00BA4E81 /* RoundedView.swift in Sources */,
 				3946C1DE1E4DE176004EA6F3 /* VisualEffectVC.swift in Sources */,
+				3946C1E21E4E0973004EA6F3 /* MyLayOut.swift in Sources */,
 				397264E41E2F67C400D35B4C /* DesignableButton.swift in Sources */,
 				3946C1DC1E4DE176004EA6F3 /* UINavigationController+Colors.swift in Sources */,
+				3946C1E41E4E0ADB004EA6F3 /* MyCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
