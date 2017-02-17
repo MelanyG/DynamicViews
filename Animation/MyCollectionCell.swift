@@ -12,7 +12,7 @@ class MyCollectionCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     
-    func setGalleryItem(_ item:GalleryItem) {
-        imageView.image = UIImage(named: item.itemImage)
+    func setGalleryItem(_ item:ItemModel) {
+        imageView.image = UIImage(named: item.imageUrl)
     }
 }

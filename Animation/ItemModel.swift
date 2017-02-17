@@ -17,17 +17,20 @@ class ItemModel {
     init(dataDictionary:Dictionary<String,String>) {
         imageUrl = dataDictionary["imageUrl"]!
         let url = URL(string: imageUrl)!
-        image =  downloadImage(url: url)
+        image = UIImage()
+//       downloadImage(url: url)
+
     }
     
-    func downloadImage(url: URL) -> UIImage {
+    func downloadImage(url: URL) {
 
         getDataFromUrl(url: url) { (data, response, error)  in
             guard let data = data, error == nil else { return }
             print(response?.suggestedFilename ?? url.lastPathComponent)
 
-            return UIImage(data: data)
+           self.image = UIImage(data: data)!
         }
+
     }
     
     func getDataFromUrl(url: URL, completion: @escaping (_ data: Data?, _  response: URLResponse?, _ error: Error?) -> Void) {

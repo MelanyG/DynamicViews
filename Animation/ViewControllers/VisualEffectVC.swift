@@ -24,18 +24,19 @@ class VisualEffectVC: UIViewController, UIGestureRecognizerDelegate {
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.styleNavBar(color: UIColor.purple, setTitle: "SecondController")
         super.viewWillAppear(animated)
-        print(self.navigationController?.parentPath ?? "error")
-        self.navigationController?.parentPath = "Visual entered"
-        print(self.navigationController?.parentPath ?? "error")
+//        print(self.navigationController?.parentPath ?? "error")
+//        self.navigationController?.parentPath = "Visual entered"
+//        print(self.navigationController?.parentPath ?? "error")
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         
     }
     override func viewWillDisappear(_ animated: Bool) {
         
         super.viewWillDisappear(animated)
-        print(self.navigationController?.parentPath ?? "error")
-        self.navigationController?.parentPath = "Visual exit"
-        print(self.navigationController?.parentPath ?? "error")
+//        print(self.navigationController?.parentPath ?? "error")
+//        self.navigationController?.parentPath = "Visual exit"
+//        print(self.navigationController?.parentPath ?? "error")
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     /*
     // MARK: - Navigation

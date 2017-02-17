@@ -23,6 +23,8 @@
 		3946C1E61E4E162B004EA6F3 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946C1E51E4E162B004EA6F3 /* ItemModel.swift */; };
 		3946C1E81E4E1E7F004EA6F3 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3946C1E71E4E1E7F004EA6F3 /* Property List.plist */; };
 		397264E41E2F67C400D35B4C /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397264E31E2F67C400D35B4C /* DesignableButton.swift */; };
+		39F45C0A1E56EF3B00BB3547 /* DynTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F45C091E56EF3B00BB3547 /* DynTableViewController.swift */; };
+		39F45C0C1E56F1D400BB3547 /* MyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F45C0B1E56F1D400BB3547 /* MyTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		3946C1E71E4E1E7F004EA6F3 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		397264E01E2E235000D35B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "Base.lproj/UIView+Designable.swift"; sourceTree = "<group>"; };
 		397264E31E2F67C400D35B4C /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		39F45C091E56EF3B00BB3547 /* DynTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DynTableViewController.swift; path = ../DynTableViewController.swift; sourceTree = "<group>"; };
+		39F45C0B1E56F1D400BB3547 /* MyTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		391BE3161E27A54E00BA4E81 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				39F45C0B1E56F1D400BB3547 /* MyTableCell.swift */,
 				3946C1E51E4E162B004EA6F3 /* ItemModel.swift */,
 				3946C1E71E4E1E7F004EA6F3 /* Property List.plist */,
 				3946C1D71E4DE176004EA6F3 /* Extensions */,
@@ -109,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				3946C1DF1E4E06D3004EA6F3 /* MyCollectionVC.swift */,
+				39F45C091E56EF3B00BB3547 /* DynTableViewController.swift */,
 				3946C1DA1E4DE176004EA6F3 /* ViewController.swift */,
 				3946C1DB1E4DE176004EA6F3 /* VisualEffectVC.swift */,
 			);
@@ -196,8 +202,10 @@
 				3946C1E61E4E162B004EA6F3 /* ItemModel.swift in Sources */,
 				391BE32A1E27A6CB00BA4E81 /* RoundedView.swift in Sources */,
 				3946C1DE1E4DE176004EA6F3 /* VisualEffectVC.swift in Sources */,
+				39F45C0C1E56F1D400BB3547 /* MyTableCell.swift in Sources */,
 				3946C1E21E4E0973004EA6F3 /* MyLayOut.swift in Sources */,
 				397264E41E2F67C400D35B4C /* DesignableButton.swift in Sources */,
+				39F45C0A1E56EF3B00BB3547 /* DynTableViewController.swift in Sources */,
 				3946C1DC1E4DE176004EA6F3 /* UINavigationController+Colors.swift in Sources */,
 				3946C1E41E4E0ADB004EA6F3 /* MyCollectionCell.swift in Sources */,
 			);

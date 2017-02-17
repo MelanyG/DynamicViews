@@ -67,5 +67,6 @@ extension UINavigationController {
     
     func backButtonPressed() {
         self.popViewController(animated: true)
+//        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
 }

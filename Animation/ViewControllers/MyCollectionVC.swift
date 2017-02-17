@@ -8,18 +8,25 @@
 
 import UIKit
 
-class MyCollectionVC: UIViewController {
+class MyCollectionVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet var collectionView: UICollectionView!
     
     var galleryItems: [ItemModel] = []
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+                super.viewDidLoad()
+//        collectionView.reloadData()
 
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -30,14 +37,14 @@ class MyCollectionVC: UIViewController {
     // MARK: - UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return galleryItems.count
+        return 30//galleryItems.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MyCollectionCell
         
-        cell.setGalleryItem(galleryItems[indexPath.row])
+        cell.imageView.image = UIImage(named: "emptyHouse")//setGalleryItem(galleryItems[indexPath.row])
         return cell
         
     }

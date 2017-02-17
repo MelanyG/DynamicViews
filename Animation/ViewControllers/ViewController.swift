@@ -22,8 +22,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.parentPath = "entered"
-        print(self.navigationController?.parentPath ?? "error")
+//        self.navigationController?.parentPath = "entered"
+//        print(self.navigationController?.parentPath ?? "error")
         self.navigationController?.styleNavBar(color: UIColor.green, setTitle: "MainView")
         
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
