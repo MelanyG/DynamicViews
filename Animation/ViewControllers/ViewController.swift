@@ -12,6 +12,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
 //    var customNavBar:BlurNavBar?
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var drawingView: DrawingView!
     
     
     override func viewDidLoad() {
@@ -27,6 +28,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         self.navigationController?.styleNavBar(color: UIColor.green, setTitle: "MainView")
         
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        drawingView.generalAmount = 10
+        drawingView.numberOfFeedbacks = 5
     }
     
      override func viewDidAppear(_ animated: Bool) {

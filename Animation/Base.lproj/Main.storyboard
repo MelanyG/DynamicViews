@@ -81,7 +81,7 @@
                                 </connections>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTI-GT-nex">
-                                <rect key="frame" x="112" y="284" width="150" height="50"/>
+                                <rect key="frame" x="112" y="376.5" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="s5G-gL-wQF"/>
                                     <constraint firstAttribute="height" constant="50" id="xcD-06-w2N"/>
@@ -105,13 +105,23 @@
                                     <segue destination="3Dw-Gm-0A4" kind="show" id="0iR-gn-Htp"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTV-Ek-1hG" customClass="DrawingView" customModule="Animation" customModuleProvider="target">
+                                <rect key="frame" x="20" y="273" width="335" height="88"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="dbA-SP-DjG"/>
+                                    <constraint firstAttribute="width" constant="335" id="fjw-bv-SbP"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Sge-B3-rle" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DCC-KW-NIl"/>
+                            <constraint firstItem="iTV-Ek-1hG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IbH-0d-emi"/>
                             <constraint firstItem="Sge-B3-rle" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="JMf-7H-8ZX"/>
+                            <constraint firstItem="iTV-Ek-1hG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="15.5" id="MdX-9N-qi3"/>
                             <constraint firstAttribute="trailing" secondItem="Sge-B3-rle" secondAttribute="trailing" id="RCT-tH-wzF"/>
-                            <constraint firstItem="RTI-GT-nex" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="7.5" id="Xlw-Qt-6pq"/>
+                            <constraint firstItem="RTI-GT-nex" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="Xlw-Qt-6pq"/>
                             <constraint firstItem="RTI-GT-nex" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Za7-wV-eJ9"/>
                             <constraint firstItem="HcN-7p-ST3" firstAttribute="top" secondItem="Sge-B3-rle" secondAttribute="bottom" constant="1" id="aNg-Rr-1bW"/>
                             <constraint firstItem="HcN-7p-ST3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="koh-gV-FCl"/>
@@ -120,6 +130,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="MainView" id="hxy-Hn-muI"/>
                     <connections>
+                        <outlet property="drawingView" destination="iTV-Ek-1hG" id="isb-fD-iZ8"/>
                         <outlet property="searchBar" destination="Sge-B3-rle" id="Pu2-j5-0Uk"/>
                     </connections>
                 </viewController>
@@ -206,7 +217,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJv-6p-HGT">
-                                <rect key="frame" x="151" y="133.5" width="150" height="200"/>
+                                <rect key="frame" x="151" y="134" width="150" height="200"/>
                                 <color key="backgroundColor" red="0.58741555639999998" green="0.1124230415" blue="0.89361554379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="6YE-ds-5eS"/>

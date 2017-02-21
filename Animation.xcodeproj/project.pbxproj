@@ -23,6 +23,8 @@
 		3946C1E61E4E162B004EA6F3 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946C1E51E4E162B004EA6F3 /* ItemModel.swift */; };
 		3946C1E81E4E1E7F004EA6F3 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3946C1E71E4E1E7F004EA6F3 /* Property List.plist */; };
 		397264E41E2F67C400D35B4C /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397264E31E2F67C400D35B4C /* DesignableButton.swift */; };
+		39BC41791E5C71F10081FE53 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BC41781E5C71F10081FE53 /* DrawingView.swift */; };
+		39BC417B1E5C80340081FE53 /* TwoRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BC417A1E5C80340081FE53 /* TwoRectView.swift */; };
 		39F45C0A1E56EF3B00BB3547 /* DynTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F45C091E56EF3B00BB3547 /* DynTableViewController.swift */; };
 		39F45C0C1E56F1D400BB3547 /* MyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F45C0B1E56F1D400BB3547 /* MyTableCell.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +49,8 @@
 		3946C1E71E4E1E7F004EA6F3 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		397264E01E2E235000D35B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "Base.lproj/UIView+Designable.swift"; sourceTree = "<group>"; };
 		397264E31E2F67C400D35B4C /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		39BC41781E5C71F10081FE53 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		39BC417A1E5C80340081FE53 /* TwoRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoRectView.swift; path = ../TwoRectView.swift; sourceTree = "<group>"; };
 		39F45C091E56EF3B00BB3547 /* DynTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DynTableViewController.swift; path = ../DynTableViewController.swift; sourceTree = "<group>"; };
 		39F45C0B1E56F1D400BB3547 /* MyTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +94,8 @@
 				3946C1D31E4DCE1E004EA6F3 /* BlurNavBar.xib */,
 				3946C1D51E4DD852004EA6F3 /* BlurNavBar.swift */,
 				391BE31B1E27A54E00BA4E81 /* Main.storyboard */,
+				39BC41781E5C71F10081FE53 /* DrawingView.swift */,
+				39BC417A1E5C80340081FE53 /* TwoRectView.swift */,
 				3946C1E31E4E0ADB004EA6F3 /* MyCollectionCell.swift */,
 				3946C1E11E4E0973004EA6F3 /* MyLayOut.swift */,
 				397264DF1E2E235000D35B4C /* UIView+Designable.swift */,
@@ -198,10 +204,12 @@
 				3946C1DD1E4DE176004EA6F3 /* ViewController.swift in Sources */,
 				391BE3181E27A54E00BA4E81 /* AppDelegate.swift in Sources */,
 				3946C1E01E4E06D3004EA6F3 /* MyCollectionVC.swift in Sources */,
+				39BC417B1E5C80340081FE53 /* TwoRectView.swift in Sources */,
 				3946C1D61E4DD852004EA6F3 /* BlurNavBar.swift in Sources */,
 				3946C1E61E4E162B004EA6F3 /* ItemModel.swift in Sources */,
 				391BE32A1E27A6CB00BA4E81 /* RoundedView.swift in Sources */,
 				3946C1DE1E4DE176004EA6F3 /* VisualEffectVC.swift in Sources */,
+				39BC41791E5C71F10081FE53 /* DrawingView.swift in Sources */,
 				39F45C0C1E56F1D400BB3547 /* MyTableCell.swift in Sources */,
 				3946C1E21E4E0973004EA6F3 /* MyLayOut.swift in Sources */,
 				397264E41E2F67C400D35B4C /* DesignableButton.swift in Sources */,
