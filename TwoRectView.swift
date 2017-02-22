@@ -61,6 +61,7 @@ class TwoRectView: CALayer, CALayerDelegate {
         color.set()
 
     }
+    
     public override func needsDisplay() -> Bool {
         return true
     }
