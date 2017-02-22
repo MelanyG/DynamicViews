@@ -29,9 +29,10 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
 //        print(self.navigationController?.parentPath ?? "error")
         self.navigationController?.styleNavBar(color: UIColor.green, setTitle: "MainView")
         drawingView.generalAmount = 10
-        drawingView.numberOfFeedbacks = 5
+        drawingView.numberOfFeedbacks = 5.5
+        let percent = CGFloat(CGFloat(drawingView.numberOfFeedbacks * 100) / CGFloat(drawingView.generalAmount) / 100)
         setupWithRating(rating: 3.2)
-        buildGeneralImage()
+        constructedIV.image = UIImage.setupWithProgress(percent: percent, textToDraw: "(\(drawingView.numberOfFeedbacks))", fontSizeToSet: 25.0, progressColor: UIColor(red: 0/255.0, green: 153/255.0, blue: 216/255.0, alpha: 1.0), fontColor: UIColor.gray, rectToDraw: constructedIV.bounds)
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
 
     }
@@ -78,36 +79,36 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
 //    }
     
     
-    private final func buildGeneralImage() {
-        let generalAmount = 10
-        let numberOfFeedbacks = 5.5
-        let percent = CGFloat(CGFloat(numberOfFeedbacks * 100) / CGFloat(generalAmount) / 100)
-        let text = "\(numberOfFeedbacks)"
-        var whiteImage = UIImage.drawTextImage(withColor: UIColor.white, withText: text, inRect: constructedIV.bounds)
-        let grayImage = UIImage.drawTextImage(withColor: UIColor.gray, withText: text, inRect: constructedIV.bounds)
-        let cropWidth = constructedIV.bounds.size.width * percent
-        whiteImage = whiteImage.crop(toRect: CGRect(x: 0.0, y: 0.0, width: cropWidth, height: whiteImage.size.height))!
-        
-        UIGraphicsBeginImageContextWithOptions(CGSize(width: grayImage.size.width, height: grayImage.size.height), false, 4.0)
-        grayImage.draw(in: CGRect(x: 0.0, y: 0.0, width: grayImage.size.width, height: grayImage.size.height))
-        whiteImage.draw(in: CGRect(x: 0.0, y: 0.0, width: cropWidth, height: grayImage.size.height))
-        
-        let combinedImage = UIGraphicsGetImageFromCurrentImageContext()
-        
-        UIGraphicsEndImageContext()
-       // constructedIV.image = combinedImage
-        let frameOne = CGRect(origin: CGPoint.zero, size: CGSize(width: constructedIV.bounds.size.width, height: constructedIV.bounds.size.height))
-        let frameTwo = CGRect(origin: CGPoint(x:cropWidth, y:0), size: CGSize(width: constructedIV.bounds.size.width - cropWidth, height: constructedIV.bounds.size.height))
-       let rectIm = UIImage.drawTwoRectangles(frameOne, frameTwo: frameTwo)
-        
-        UIGraphicsBeginImageContextWithOptions(constructedIV.bounds.size, false, 0.0)
-
-        rectIm.draw(in: constructedIV.bounds)
-        combinedImage?.draw(in:CGRect(x: 0, y: constructedIV.bounds.size.height / 2 - 25.0, width: constructedIV.bounds.size.width, height: constructedIV.bounds.size.height))
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        constructedIV.image = newImage
-    }
+//    private final func buildGeneralImage() {
+//        let generalAmount = 10
+//        let numberOfFeedbacks = 5.5
+//        let percent = CGFloat(CGFloat(numberOfFeedbacks * 100) / CGFloat(generalAmount) / 100)
+//        let text = "\(numberOfFeedbacks)"
+//        var whiteImage = UIImage.drawTextImage(withColor: UIColor.white, withText: text, inRect: constructedIV.bounds)
+//        let grayImage = UIImage.drawTextImage(withColor: UIColor.gray, withText: text, inRect: constructedIV.bounds)
+//        let cropWidth = constructedIV.bounds.size.width * percent
+//        whiteImage = whiteImage.crop(toRect: CGRect(x: 0.0, y: 0.0, width: cropWidth, height: whiteImage.size.height))!
+//        
+//        UIGraphicsBeginImageContextWithOptions(CGSize(width: grayImage.size.width, height: grayImage.size.height), false, 4.0)
+//        grayImage.draw(in: CGRect(x: 0.0, y: 0.0, width: grayImage.size.width, height: grayImage.size.height))
+//        whiteImage.draw(in: CGRect(x: 0.0, y: 0.0, width: cropWidth, height: grayImage.size.height))
+//        
+//        let combinedImage = UIGraphicsGetImageFromCurrentImageContext()
+//        
+//        UIGraphicsEndImageContext()
+//       // constructedIV.image = combinedImage
+//        let frameOne = CGRect(origin: CGPoint.zero, size: CGSize(width: constructedIV.bounds.size.width, height: constructedIV.bounds.size.height))
+//        let frameTwo = CGRect(origin: CGPoint(x:cropWidth, y:0), size: CGSize(width: constructedIV.bounds.size.width - cropWidth, height: constructedIV.bounds.size.height))
+//       let rectIm = UIImage.drawTwoRectangles(frameOne, frameTwo: frameTwo)
+//        
+//        UIGraphicsBeginImageContextWithOptions(constructedIV.bounds.size, false, 0.0)
+//
+//        rectIm.draw(in: constructedIV.bounds)
+//        combinedImage?.draw(in:CGRect(x: 0, y: constructedIV.bounds.size.height / 2 - 25.0, width: constructedIV.bounds.size.width, height: constructedIV.bounds.size.height))
+//        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+//        UIGraphicsEndImageContext()
+//        constructedIV.image = newImage
+//    }
     
     func setupWithRating(rating: Double) {
         let whiteBezier = UIBezierPath()

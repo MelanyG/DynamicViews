@@ -61,7 +61,7 @@ class DrawingView: UIView {
 //         layer.addSublayer(ratingPercentView)
 //    }
     
-    var numberOfFeedbacks: Int = 0 {
+    var numberOfFeedbacks: CGFloat = 0 {
         didSet {
 //            createMaskView()
 //          buildGeneralImage()  
