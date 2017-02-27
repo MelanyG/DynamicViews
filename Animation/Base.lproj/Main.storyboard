@@ -122,7 +122,7 @@
                                     <constraint firstAttribute="height" constant="40" id="mfl-nI-pN3"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cD3-W7-EcV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cD3-W7-EcV">
                                 <rect key="frame" x="20" y="433" width="335" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="kSB-gW-qBV"/>
@@ -240,7 +240,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJv-6p-HGT">
-                                <rect key="frame" x="151" y="101.5" width="150" height="200"/>
+                                <rect key="frame" x="151" y="102" width="150" height="200"/>
                                 <color key="backgroundColor" red="0.58741555639999998" green="0.1124230415" blue="0.89361554379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="6YE-ds-5eS"/>

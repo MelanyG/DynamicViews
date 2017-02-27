@@ -23,7 +23,38 @@ class DrawingView: UIView {
 
     }
     
-//    public override func draw(_ frame: CGRect) {
+    public override func draw(_ frame: CGRect) {
+        let ctx = UIGraphicsGetCurrentContext()
+        UIColor(red: 0/255.0, green: 153/255.0, blue: 216/255.0, alpha: 1.0).setFill()
+        //        UIColor.red.setStroke()
+        let bpath:UIBezierPath = UIBezierPath(roundedRect: CGRect(origin: CGPoint(x:1, y: 1), size: CGSize(width: frame.size.width/3, height: frame.size.height - 2)), byRoundingCorners: [.topLeft, .bottomLeft], cornerRadii: CGSize(width: 5, height: 5))
+        bpath.lineCapStyle = .round
+        bpath.lineJoinStyle = .round
+        //        bpath.miterLimit = -10
+        bpath.close()
+        bpath.fill()
+        //        bpath.stroke()
+        
+        UIColor.white.setFill()
+//        UIColor.white.setStroke()
+        
+        let bpathTwo:UIBezierPath = UIBezierPath(rect: CGRect(origin: CGPoint(x:(frame.size.width - frame.size.width * percent), y: frame.size.height), size: CGSize(width: frame.size.width, height: frame.size.height)))
+        bpathTwo.close()
+        bpathTwo.fill()
+//        bpathTwo.stroke()
+        
+        UIColor.gray.setStroke()
+        
+        let bpathThree:UIBezierPath = UIBezierPath(roundedRect: CGRect(origin: CGPoint(x:1, y: 1), size: CGSize(width: frame.size.width - 2, height: frame.size.height - 2)), cornerRadius: 5)
+        bpathThree.lineWidth = 2
+        bpathThree.close()
+        
+        bpathThree.stroke()
+        
+        bpath.append(bpathTwo)
+        bpath.append(bpathThree)
+        
+ctx?.addPath(bpath.cgPath)
 //        percent = CGFloat(CGFloat(numberOfFeedbacks * 100) / CGFloat(generalAmount) / 100)
 //        let h = frame.height
 //        let w = frame.width
@@ -34,6 +65,7 @@ class DrawingView: UIView {
 //        let ctx = UIGraphicsGetCurrentContext()
 //        //4
 //        ctx!.addRect(drect1)
+//        
 ////        ctx!.setLineWidth(10)
 //        ctx!.setStrokeColor(UIColor.gray.cgColor)
 //        ctx!.strokePath()
@@ -55,11 +87,11 @@ class DrawingView: UIView {
 //        
 //        ctx?.fillPath()
 //        color.set()
-//
+
 //        layer.addSublayer(maskForView)
 //        layer.mask = textMask
 //         layer.addSublayer(ratingPercentView)
-//    }
+    }
     
     var numberOfFeedbacks: CGFloat = 0 {
         didSet {

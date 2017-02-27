@@ -22,6 +22,11 @@ class DynTableViewController: UIViewController, UITableViewDelegate, UITableView
                     "For example",
                     "Note that due to differences in intrinsic content size, cells with the same constraints (type) may still have varying heights! Don't confuse fundamentally different layouts (different constraints) with different calculated view frames (solved from identical constraints) due to different sizes of content.",
                     "Generally speaking, the estimate you provide doesn't have to be very accurate -- it is only used to correctly size the scroll indicator in the table view, and the table view does a good job of adjusting the scroll indicator for incorrect estimates as you scroll cells onscreen.",
+                    "Only if your row heights have extreme variability (e.g. differ by an order of magnitude) and you notice the scroll indicator jumping",
+                    "A good hint that you need to use a new reuse identifier is when your cell variant has a different number of subviews, or the subviews are arranged in a distinct fashion.",
+                    "For example",
+                    "Note that due to differences in intrinsic content size, cells with the same constraints (type) may still have varying heights! Don't confuse fundamentally different layouts (different constraints) with different calculated view frames (solved from identical constraints) due to different sizes of content.",
+                    "Generally speaking, the estimate you provide doesn't have to be very accurate -- it is only used to correctly size the scroll indicator in the table view, and the table view does a good job of adjusting the scroll indicator for incorrect estimates as you scroll cells onscreen.",
                     "Only if your row heights have extreme variability (e.g. differ by an order of magnitude) and you notice the scroll indicator jumping"]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -55,6 +60,15 @@ class DynTableViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
 
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        myDataSource.append("You should be able to call just this method. I will make a small app right now and double test this anyway. – Sean McDonald")
+        let indexPath:IndexPath = IndexPath(row:(self.myDataSource.count - 5), section:0)
+        myTableView.beginUpdates()
+        self.myTableView.insertRows(at:[indexPath], with: .fade)
+        myTableView.endUpdates()
+        print("scroll action!!!")
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

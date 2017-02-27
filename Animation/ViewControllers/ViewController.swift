@@ -32,9 +32,9 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         drawingView.numberOfFeedbacks = 5.5
         let percent = CGFloat(CGFloat(drawingView.numberOfFeedbacks * 100) / CGFloat(drawingView.generalAmount) / 100)
         setupWithRating(rating: 3.2)
-        constructedIV.image = UIImage.setupWithProgress(percent: percent, textToDraw: "(\(drawingView.numberOfFeedbacks))", fontSizeToSet: 25.0, progressColor: UIColor(red: 0/255.0, green: 153/255.0, blue: 216/255.0, alpha: 1.0), fontColor: UIColor.gray, rectToDraw: constructedIV.bounds)
+        constructedIV.setupWithProgress(percent: percent, textToDraw: "(\(drawingView.numberOfFeedbacks))", fontSizeToSet: 25.0, fontColor: UIColor.gray)
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
-
+//constructedIV.image = UIImage.drawTwoRectangles(constructedIV.bounds, frameTwo: constructedIV.bounds, frameColor: UIColor.green)
     }
     
      override func viewDidAppear(_ animated: Bool) {
