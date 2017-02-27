@@ -10,9 +10,24 @@ import UIKit
 
 class VisualEffectVC: UIViewController, UIGestureRecognizerDelegate {
 
+    @IBOutlet weak var imView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let house = UIImage(named: "emptyHouse")
 
+        
+        UIGraphicsBeginImageContextWithOptions((house?.size)!, false, 0)
+        let empty = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+let arr = [house!, empty!, house!, empty!, house!]
+        let imgView = UIImageView(image:empty)
+        imgView.frame.origin = CGPoint(x: 0, y: 50)
+        self.view.addSubview(imgView)
+        imgView.image = house
+        imgView.animationImages = arr
+        imgView.animationDuration = 2
+        imgView.animationRepeatCount = 2
+        imgView.startAnimating()
         // Do any additional setup after loading the view.
     }
 

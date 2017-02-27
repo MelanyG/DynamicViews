@@ -302,9 +302,18 @@
                                                         <color key="textColor" red="0.89361554379999997" green="0.221865383" blue="0.24425572470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f4J-I5-kkm">
+                                                        <rect key="frame" x="28" y="55" width="339" height="114"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="114" id="591-cY-TeW"/>
+                                                        </constraints>
+                                                    </imageView>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="vE0-bH-67U" firstAttribute="centerY" secondItem="8wj-ga-b6q" secondAttribute="centerY" constant="-28" id="49k-13-YGj"/>
+                                                    <constraint firstItem="f4J-I5-kkm" firstAttribute="top" secondItem="8wj-ga-b6q" secondAttribute="top" constant="55" id="99L-bY-awg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="f4J-I5-kkm" secondAttribute="trailing" constant="20" id="GcW-9h-clw"/>
+                                                    <constraint firstItem="f4J-I5-kkm" firstAttribute="leading" secondItem="8wj-ga-b6q" secondAttribute="leading" constant="20" id="Mo0-4c-ZLW"/>
                                                     <constraint firstItem="iUw-Q1-QmZ" firstAttribute="leading" secondItem="8wj-ga-b6q" secondAttribute="leading" constant="70" id="ODl-FI-VP1"/>
                                                     <constraint firstItem="vE0-bH-67U" firstAttribute="centerX" secondItem="8wj-ga-b6q" secondAttribute="centerX" id="TMs-P4-lKV"/>
                                                     <constraint firstAttribute="trailing" secondItem="iUw-Q1-QmZ" secondAttribute="trailing" constant="70" id="dbE-nz-ukg"/>
@@ -340,6 +349,9 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="0J3-93-ySf"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imView" destination="f4J-I5-kkm" id="sd9-TN-Pxb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0FE-Uf-SzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
